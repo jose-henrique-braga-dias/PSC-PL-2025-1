@@ -31,9 +31,11 @@ public class Operadores{
 
                     // Operadores de atribuição
                     int g = 10;
-                    g+=5;
-
-                    System.out.println();
+                    g+=5; // g = g + 5 = 15
+                    g-=5; // g = g - 5 = 5
+                    g/=5; // g = g / 5 = 2
+                    g*=5; // g = g * 5 = 50
+                    g%=5; // g = g % 5 = 0
 
     }
 }
