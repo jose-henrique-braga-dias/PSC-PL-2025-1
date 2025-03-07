@@ -1,5 +1,39 @@
 public class Operadores{
     public static void main(String[] args) {
-        System.out.println("Olá mundo");
+        // Operadores aritiméticos
+
+        int a = 10;
+        int b = 5;
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a / b);
+        System.out.println(a * b);
+        System.out.println(a % b);
+
+            // Operadores de comparação
+
+            int c = 20;
+            int d = 15;
+            System.out.println(c == d);
+            System.out.println(c != d);
+            System.out.println(c > d);
+            System.out.println(c < d);
+            System.out.println(c >= d);
+            System.out.println(c <= d);
+
+                // Operadores lógicos
+
+                boolean e = true;
+                boolean f = false;
+                System.out.println(e && f);
+                System.out.println(e || f);
+                System.out.println(!e);
+
+                    // Operadores de atribuição
+                    int g = 10;
+                    g+=5;
+
+                    System.out.println();
+
     }
 }
