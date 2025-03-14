@@ -1,4 +1,4 @@
-package introducaoclasse;
+/*package introducaoclasse;
 
 public class pessoa {
 
@@ -41,4 +41,4 @@ public class pessoa {
                     return this.nome;
                 }
     //fim
-}
+}*/

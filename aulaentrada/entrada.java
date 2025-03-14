@@ -1,4 +1,4 @@
-package entrada;
+/*package entrada;
 
 import java.util.Scanner;
 
@@ -15,4 +15,4 @@ public class entrada {
         System.err.println("Olá " + nome + ", Você tem " + idade + " anos, seja bem vindo");
 
     }
-}
+}*/

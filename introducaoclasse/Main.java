@@ -1,4 +1,4 @@
-package introducaoclasse;
+/*package introducaoclasse;
 
 public class Main {
 
@@ -8,7 +8,7 @@ public class Main {
         individuo1.nome = "José";
         /*for( int i=0; i<=50; i++) {
             individuo1.setPeso(i*5);
-        }*/
+        }
         individuo1.setPeso(120);
 
         individuo2.nome = "Maria";
@@ -18,4 +18,4 @@ public class Main {
         System.out.println("individuo 2 " + individuo2.nome + " peso " + individuo2.getPeso());
     }
 
-}
+}*/
