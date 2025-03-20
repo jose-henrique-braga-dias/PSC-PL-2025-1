@@ -1,4 +1,4 @@
-package aulaentrada;
+/*package aulaentrada;
 
 import javax.swing.JOptionPane;
 
@@ -14,4 +14,4 @@ public static void main(String[] args) {
 
 }
     
-}
+}*/
