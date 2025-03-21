@@ -1,4 +1,4 @@
-package Matrizes;
+/*package Matrizes;
 
 public class matriz4 {
     public static void main(String[] args) {
@@ -6,9 +6,8 @@ public class matriz4 {
         try {
             valores[5] = 14;
         } catch (Exception e) {
-            // TODO: handle exception
             System.out.println("erro " + e.getMessage());
         }
         
     }
-}
+}*/

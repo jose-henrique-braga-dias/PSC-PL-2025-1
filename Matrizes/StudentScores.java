@@ -1,4 +1,4 @@
-package Matrizes;
+/*package Matrizes;
 
 import java.util.Scanner;
 
@@ -22,4 +22,4 @@ public class StudentScores {
         }
         System.out.println(" A pontuação média da classe " + (sum/10) + " avg = " + avg);
     }
-}
+}*/

@@ -1,4 +1,4 @@
-package Matrizes;
+/*package Matrizes;
 
 public class matriz3 {
     public static void main(String[] args) {
@@ -13,4 +13,4 @@ public class matriz3 {
 
     }
     
-}
+}*/
