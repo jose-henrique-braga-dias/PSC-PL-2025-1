@@ -1,4 +1,4 @@
-import javax.swing.JOptionPane;
+/*import javax.swing.JOptionPane;
 
 public class EntradaExemplo2 {
     public static void main(String[] args) {
@@ -11,4 +11,4 @@ public class EntradaExemplo2 {
         }
 
     }
-}
+}*/
