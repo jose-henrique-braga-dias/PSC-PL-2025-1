@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class Entrada {
     public static void main(String[] args) {
@@ -16,4 +16,4 @@ public class Entrada {
         sc.close();
     }
     
-}
+}*/
