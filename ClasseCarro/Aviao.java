@@ -1,64 +1,55 @@
 public class Aviao extends Veiculo {
-    private double limiteLitros;
+    private double altitude;
+    private boolean tremDePousoBaixado;
 
-    public Aviao(String marca, String modelo, int ano, double combustivel, double limiteLitros) {
+    public Aviao(String marca, String modelo, int ano, double combustivel) {
         super(marca, modelo, ano, combustivel);
-        this.limiteLitros = limiteLitros;
     }
 
-    public void limiteLitros(double combustivel) {
-        if ((this.limiteLitros - super.statusCombustivel()) >= combustivel) {
-            super.abastecer(combustivel);
-        }
-    }
-
-    @Override 
-    public void acelerar() {
-        if (!super.statusMotor()) {
-            System.out.println("O motor está desligado, não é possível acelerar.");
-        } if (super.statusCombustivel() <= 0) {
-            System.out.println("Não há combustível suficiente para acelerar.");
+    public void decolar() {
+        if (this.altitude == 0) {
+            this.altitude = 10000;
+            this.tremDePousoBaixado = false;
+            System.out.println("Subindo o trem de pouso");
+            System.out.println("Decolando... Altitude atual: " + this.altitude + " metros.");
         } else {
-            super.setVelocidadeAtual(super.statusVelocidade() + 50);
-            super.setCombustivel(super.statusCombustivel() - 10.0);
-            System.out.println("Acelerando... Velocidade atual: " + super.statusVelocidade() + " km/h");
+            System.out.println("O avião já está em voo.");
         }
     }
 
-    @Override
-    public void frear() {
-        if (super.statusVelocidade() > 0) {
-            super.setVelocidadeAtual(super.statusVelocidade() - 50);
-            if (super.statusVelocidade() < 0) {
-                super.setVelocidadeAtual(0);
-            }
-            System.out.println("Freando... Velocidade atual: " + super.statusVelocidade() + " km/h");
+    public void subir() {
+        if (this.altitude > 0) {
+            altitude += 1000;
+            System.out.println("Subindo... Altitude atual: " + this.altitude + " metros.");
         } else {
-            System.out.println("O veículo já está parado.");
+            System.out.println("O avião não está em voo.");
         }
     }
-    
-    public void subindo() {
-        if (super.statusMotor()) {
-            if (super.statusVelocidade() >= 250) {
-                System.out.println("O avião está subindo.");
-            } else {
-                System.out.println("O avião não pode subir, pois a velocidade atual é menor que 250 km/h.");
+
+    public void descer() {
+        if (this.altitude > 1000) {
+            this.altitude -= 1000;
+            System.out.println("Descendo... Altitude atual: " + altitude + " metros.");
+            if (this.altitude < 0) {
+                this.altitude = 0;
+                System.out.println("O avião está no solo.");
             }
         } else {
-            System.out.println("O motor do avião não está ligado.");
+            System.out.println("O avião não pode descer mais.");
         }
     }
 
-    public void descendo() {
-        if (super.statusMotor()) {
-            if (super.statusVelocidade() < 250) {
-                System.out.println("O avião está descendo.");
-            } else {
-                System.out.println("O avião não pode descer, pois a velocidade atual é maior que 250 km/h.");
+    public void aterrissar(){
+        if(this.altitude > 0 ){
+            for(;this.altitude > 0; this.altitude -= 1000){
+                System.out.println("Aterrissando... Altitude atual: " + this.altitude + " metros.");
+                if(this.altitude <= 1000 ){
+                    this.tremDePousoBaixado = true; 
+                    System.out.println("Trem de pouso baixado.");
+                }
             }
         } else {
-            System.out.println("O motor do avião não está ligado.");
+            System.out.println("Avião já está no solo.");
         }
     }
 }
