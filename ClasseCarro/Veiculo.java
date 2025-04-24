@@ -6,6 +6,30 @@ public class Veiculo {
     private boolean motorLigado;
     private double combustivel;
 
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public double getVelocidadeAtual() {
+        return velocidadeAtual;
+    }
+
+    public boolean isMotorLigado() {
+        return motorLigado;
+    }
+
+    public double getCombustivel() {
+        return combustivel;
+    }
+
     public void setMarca(String marca) {
         this.marca = marca;
     }
@@ -103,5 +127,13 @@ public class Veiculo {
 
     public double statusCombustivel() {
         return this.combustivel;
+    }
+
+    public boolean statusMotor() {
+        return this.motorLigado;
+    }
+
+    public double statusVelocidade() {
+        return this.velocidadeAtual;
     }
 }
