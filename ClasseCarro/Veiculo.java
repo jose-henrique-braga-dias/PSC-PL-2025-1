@@ -22,10 +22,6 @@ public class Veiculo {
         return velocidadeAtual;
     }
 
-    public boolean isMotorLigado() {
-        return motorLigado;
-    }
-
     public double getCombustivel() {
         return combustivel;
     }
